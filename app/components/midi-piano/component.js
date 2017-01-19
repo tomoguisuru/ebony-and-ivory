@@ -14,20 +14,20 @@ const MidiPianoComponent = Component.extend({
     set(this, 'is_loading', true);
 
     MIDI.loadPlugin({
-      instrument: "acoustic_grand_piano",
-      onprogress(state, progress) {
+      instrument: 'acoustic_grand_piano',
+      onprogress: (state, progress) => {
         console.log(state, progress);
       },
       onsuccess: () => {
         set(this, 'is_loading', false);
-      }
+      },
     });
   },
 
   actions: {
 
     play_note(note) {
-      const delay = 0; // play one note every quarter second
+      const delay = 0;      // play one note every quarter second
       const velocity = 127; // how hard the note hits
 
       // play the note
