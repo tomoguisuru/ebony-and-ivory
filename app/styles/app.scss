@@ -1,0 +1,67 @@
+@import 'ember-paper';
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body, body > div.ember-view {
+  display: flex;
+  width: 100%;
+
+  .keyboard {
+    text-align: center;
+    background-color: black;
+    max-width: 400px;
+
+    .key-top {
+      height: 40px;
+    }
+
+    .keys {
+
+      .white-key, .black-key {
+        border: 1px solid #000;
+        border-radius: 0 0 10px 10px;
+
+        &:hover {
+          background-color: #6B6464;
+        }
+      }
+
+      .white-key {
+        min-height: 160px;
+        background-color: white;
+      }
+
+      .black-key {
+        color: white;
+        min-height: 100px;
+        position: absolute;
+        background-color: black;
+        top: 40px;
+
+        &.c-sharp {
+          left: 39px;
+        }
+
+        &.d-sharp {
+          left: 90px;
+        }
+
+        &.f-sharp {
+          left: 190px;
+        }
+
+        &.g-sharp {
+          left: 239px;
+        }
+
+        &.a-sharp {
+          left: 290px;
+        }
+      }
+    }
+
+  }
+}
