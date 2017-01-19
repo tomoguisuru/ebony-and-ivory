@@ -1,3 +1,6 @@
+{{#if is_loading}}
+  {{paper-progress-circular}}
+{{else}}
   <div class="keyboard layout-column">
     <div class="key-top flex"></div>
     <div class="keys layout-row">
@@ -16,3 +19,5 @@
       <div class="white-key flex-20" {{action "play_note" 72 }}>C</div>
     </div>
   </div>
+{{/if}}
+
