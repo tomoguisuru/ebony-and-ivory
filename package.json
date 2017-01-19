@@ -1,9 +1,9 @@
 {
   "name": "ebony-and-ivory",
-  "version": "0.0.0",
-  "description": "Small description for ebony-and-ivory goes here",
+  "version": "0.0.1",
+  "description": "Simple demo using Ember Deploy",
   "license": "MIT",
-  "author": "",
+  "author": "Brandon Drake",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -34,7 +34,6 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10"
   },
   "engines": {
