@@ -11,3 +11,13 @@ dependencies:
   override:
     - npm install --no-progress
     - bower install
+
+deployment:
+  qa:
+    branch: /(release|hotfix)\/.*/
+    commands:
+      - ember deploy production --verbose
+  release:
+    branch: master
+    commands:
+      - ember deploy production --verbose
