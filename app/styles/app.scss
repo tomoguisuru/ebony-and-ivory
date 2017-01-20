@@ -16,6 +16,7 @@ body, body > div.ember-view {
 
     .key-top {
       height: 40px;
+      background-color: #0D3349;
     }
 
     .keys {
@@ -40,6 +41,7 @@ body, body > div.ember-view {
         position: absolute;
         background-color: black;
         top: 40px;
+        width: 20px;
 
         &.c-sharp {
           left: 39px;

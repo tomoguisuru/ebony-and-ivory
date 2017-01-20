@@ -4,19 +4,30 @@
   <div class="keyboard layout-column">
     <div class="key-top flex"></div>
     <div class="keys layout-row">
-      <div class="white-key flex-20" {{action "play_note" 60 }}>C</div>
-      <div class="black-key c-sharp flex-20" {{action "play_note" 61 }}>C#</div>
-      <div class="white-key flex-20" {{action "play_note" 62 }}>D</div>
-      <div class="black-key d-sharp flex-20" {{action "play_note" 63 }}>Eb</div>
-      <div class="white-key flex-20" {{action "play_note" 64 }}>E</div>
-      <div class="white-key flex-20" {{action "play_note" 65 }}>F</div>
-      <div class="black-key f-sharp flex-20" {{action "play_note" 66 }}>F#</div>
-      <div class="white-key flex-20" {{action "play_note" 67 }}>G</div>
-      <div class="black-key g-sharp flex-20" {{action "play_note" 68 }}>G#</div>
-      <div class="white-key flex-20" {{action "play_note" 69 }}>A</div>
-      <div class="black-key a-sharp flex-20" {{action "play_note" 70 }}>Bb</div>
-      <div class="white-key flex-20" {{action "play_note" 71 }}>B</div>
-      <div class="white-key flex-20" {{action "play_note" 72 }}>C</div>
+      {{midi-piano/piano-key click_cb=(action "play_note" 60)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 62)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 64)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 65)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 67)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 69)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 71)}}
+      {{midi-piano/piano-key click_cb=(action "play_note" 72)}}
+
+      {{midi-piano/piano-key classNames="c-sharp"
+                             is_black_key=true
+                             click_cb=(action "play_note" 61)}}
+      {{midi-piano/piano-key classNames="d-sharp"
+                             is_black_key=true
+                             click_cb=(action "play_note" 63)}}
+      {{midi-piano/piano-key classNames="f-sharp"
+                             is_black_key=true
+                             click_cb=(action "play_note" 66)}}
+      {{midi-piano/piano-key classNames="g-sharp"
+                             is_black_key=true
+                             click_cb=(action "play_note" 68)}}
+      {{midi-piano/piano-key classNames="a-sharp"
+                             is_black_key=true
+                             click_cb=(action "play_note" 70)}}
     </div>
   </div>
 {{/if}}
