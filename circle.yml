@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 4.5.0
+
+dependencies:
+  pre:
+    - npm install -g bower
+    - npm install -g phantomjs
+    - npm install -g ember-cli@2.10.1
+
+  override:
+    - npm install --no-progress
+    - bower install
+
+deployment:
+  qa:
+    branch: /(release|hotfix)\/.*/
+    commands:
+      - ember deploy production --verbose
+  release:
+    branch: master
+    commands:
+      - ember deploy production --verbose
